@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSKTM IT Club</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333333;
+            line-height: 1.4;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            min-height: 600px;
+            padding: 10px;
+        }
+
+        .logo {
+            min-height: 100px;
+            background-image: url("header.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            padding: 12px 20px 12px 65px;
+        }
+
+        .logo h1 {
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+
+        .logo p {
+            font-size: 11px;
+            color: #80e5e5;
+        }
+
+        .navigation {
+            display: flex;
+            min-height: 50px;
+            background-color: #49cdd0;
+            margin-top: 10px;
+            padding: 12px 15px;
+        }
+
+        .navigation a {
+            color: #12345a;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        .navigation a:hover {
+            color: white;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            min-height: 400px;
+            margin-top: 10px;
+        }
+
+        .side-bar {
+            width: 20%;
+            min-height: 400px;
+            background-color: #e0f5f5;
+            padding: 15px;
+        }
+
+        .side-bar h2 {
+            color: #12345a;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .side-bar p {
+            margin-bottom: 10px;
+        }
+
+        .side-bar ul {
+            margin-left: 20px;
+        }
+
+        .side-bar li {
+            margin-bottom: 10px;
+        }
+
+        .side-bar a {
+            color: #12345a;
+        }
+
+        .body-area {
+            width: 70%;
+            min-height: 400px;
+            background-color: white;
+            padding: 18px;
+        }
+
+        .body-area h2 {
+            color: #12345a;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .body-area p {
+            margin-bottom: 6px;
+        }
+
+        .body-area section {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #49cdd0;
+        }
+
+        .body-area a {
+            color: #087f8c;
+        }
+
+        .footer {
+            min-height: 20px;
+            background-color: #12345a;
+            color: white;
+            margin-top: 10px;
+            padding: 12px;
+            text-align: left;
+        }
+
+        @media (max-width: 700px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .side-bar {
+                width: 100%;
+                min-height: 150px;
+                margin-bottom: 10px;
+            }
+
+            .body-area {
+                width: 100%;
+                min-height: 400px;
+            }
+
+            .navigation a {
+                margin-right: 10px;
+                font-size: 13px;
+            }
+
+            .logo h1 {
+                font-size: 20px;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container" id="home">
+
+        <div class="logo">
+            <h1>FSKTM IT Club</h1>
+            <p>Learn. Build. Innovate. Together.</p>
+        </div>
+
+        <div class="navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#events">Events</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="content">
+
+            <!-- Side-bar -->
+            <div class="side-bar">
+                <h2>Club Corner</h2>
+                <p>Explore our club activities.</p>
+
+                <ul>
+                    <li><a href="#events">Upcoming Events</a></li>
+                    <li><a href="#resources">Learning Resources</a></li>
+                    <li><a href="#about">About Our Club</a></li>
+                </ul>
+            </div>
+
+            <div class="body-area">
+
+                <section id="about">
+                    <h2>Welcome to FSKTM IT Club</h2>
+                    <p>
+                        FSKTM IT Club is a community for students
+                        who are interested in technology,
+                        programming and web development.
+                    </p>
+                </section>
+
+                <section id="events">
+                    <h2>Upcoming Activities</h2>
+                    <p>
+                        Our club plans coding workshops,
+                        web design activities and technology
+                        sharing sessions for students.
+                    </p>
+                </section>
+
+                <section id="resources">
+                    <h2>Learning Resources</h2>
+                    <p>
+                        Improve your web development skills
+                        with online tutorials.
+                        <a href="https://www.w3schools.com/"
+                           target="_blank" rel="noopener">
+                            Visit W3Schools
+                        </a>
+                    </p>
+                </section>
+
+                <section id="contact">
+                    <h2>Contact Us</h2>
+                    <p>
+                        Interested in joining our club?
+                        Contact the FSKTM IT Club
+                        for more information.
+                    </p>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2026 FSKTM IT Club. All rights reserved.</p>
+        </div>
+
+    </div>
+</body>
+</html>
